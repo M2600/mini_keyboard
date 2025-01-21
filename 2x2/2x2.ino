@@ -1,15 +1,17 @@
 #include <HID-Project.h>
-#include <HID-Settings.h>
 
-
+// 使用するピンの定義
 #define KEY_A 9
 #define KEY_B 8
 #define KEY_1 6
 #define KEY_2 5
 
+// ROWピンのリスト
 const int ROW[] = {KEY_A, KEY_B};
+// COLピンのリスト
 const int COL[] = {KEY_1, KEY_2};
 
+// キーマップの定義
 KeyboardKeycode KEYMAP[sizeof(ROW)/sizeof(ROW[0])][sizeof(COL)/sizeof(COL[0])] = {
     {KEY_A, KEY_B},
     {KEY_C, KEY_D}
@@ -40,6 +42,8 @@ void setup(){
         }
     }
 
+    // キーボードの初期動作
+    BootKeyboard.begin();
 }
 
 
