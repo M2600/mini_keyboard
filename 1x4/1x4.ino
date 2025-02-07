@@ -14,10 +14,7 @@ const int COL[] = {PIN_A};
 
 // キーマップの定義
 KeyboardKeycode KEYMAP[sizeof(ROW)/sizeof(ROW[0])][sizeof(COL)/sizeof(COL[0])] = {
-    {KEY_A},
-    {KEY_B},
-    {KEY_C},
-    {KEY_D}
+    {KEY_A},{KEY_B},{KEY_C},{KEY_D}
 };
 
 // キーの状態を保持する2次元配列
